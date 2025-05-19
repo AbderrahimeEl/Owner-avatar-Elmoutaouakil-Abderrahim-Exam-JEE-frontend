@@ -1,3 +1,9 @@
 import { Routes } from '@angular/router';
 
-export const routes: Routes = [];
+import { ClientsComponent } from './clients/clients.component';
+
+export const routes: Routes = [
+  { path: '', component: ClientsComponent },
+  { path: 'clients', component: ClientsComponent },
+  { path: '**', redirectTo: '' }
+];
